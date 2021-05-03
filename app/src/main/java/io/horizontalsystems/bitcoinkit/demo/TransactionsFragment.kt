@@ -41,6 +41,7 @@ class TransactionsFragment : Fragment(), ViewHolderTransaction.Listener {
             }
         })
 
+
         viewModel.transactionRaw.observe(this, Observer { transactionHex ->
             activity?.let {
                 val dialog = AlertDialog.Builder(it)
